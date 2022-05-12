@@ -1,0 +1,22 @@
+{
+  "people": [
+    {
+      "name": "Ryan Reynolds",
+      "age": 45,
+      "url": "",
+      "note": "One of my favourite actors"
+    },
+    {
+      "name": "Tom Holland",
+      "age": 25,
+      "url": "",
+      "note": "Played in the new spiderman movies"
+    },
+    {
+      "name": "Ed Sheeran",
+      "age": 31,
+      "url": "",
+      "note": "One of the most talented song writers and singers in the world"
+    }
+  ]
+}
