@@ -1,11 +1,11 @@
-import { ChangeEvent, FormEvent, useState } from "react";
+import React, { ChangeEvent, FormEvent, useState } from "react";
 import { IState } from "../App";
 
 interface IProps {
   onAdd: Function;
 }
 
-const AddInvitee = ({ onAdd }: IProps) => {
+const AddInvitee: React.FC<IProps> = ({ onAdd }) => {
   const [input, setInput] = useState({
     name: "",
     age: "",
@@ -15,14 +15,14 @@ const AddInvitee = ({ onAdd }: IProps) => {
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  ): void => {
     setInput({
       ...input,
       [e.target.name]: e.target.value,
     });
   };
 
-  const onSubmit = (e: FormEvent) => {
+  const onSubmit = (e: FormEvent): void => {
     e.preventDefault();
 
     if (!input.name || !input.age) {
